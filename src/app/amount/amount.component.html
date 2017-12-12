@@ -1,0 +1,12 @@
+<md-form-field [formGroup]="group">
+  <input mdInput
+         appAmountInput
+         type="tel"
+         [name]="name"
+         [placeholder]="placeholder"
+         [formControlName]="name">
+  <button md-button *ngIf="control.value" mdSuffix md-icon-button aria-label="Clear" (click)="reset()">
+    <md-icon>close</md-icon>
+  </button>
+  <md-error *ngIf="control.hasError('required')" required>Obligatoire</md-error>
+</md-form-field>

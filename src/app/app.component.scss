@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem auto;
+  height: 100vh;
+  width: 70vw;
+}
+
+h1 {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.container {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  flex: 1 1 auto;
+
+  .mat-raised-button {
+    width: 100%;
+  }
+}
+
